@@ -11,7 +11,7 @@ RUN comfy model download --url https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_
 RUN comfy model download --url https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_i2v_low_noise_14B_fp16.safetensors --relative-path models/diffusion_models --filename wan2.2_i2v_low_noise_14B_fp16.safetensors
 RUN comfy model download --url https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/blob/main/split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors --relative-path models/loras --filename 
 I2V_lightx_4Steps_HIGH.safetensors
-RUN https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/blob/main/split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors --relative-path models/loras --filename
+RUN comfy model download --url https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/blob/main/split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors --relative-path models/loras --filename
 I2V_lightx_4Steps_LOW.safetensors
 RUN comfy model download --url https://huggingface.co/jasonot/mycomfyui/blob/main/rife47.pth --relative-path models/checkpoints --filename rife47.pth
 
